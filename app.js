@@ -30,8 +30,13 @@ app.use(cors());
 
 
 // 处理路由
+/* 用户（登录） */
 var usersRouter = require('./routes/users');
 app.use('/api/users', usersRouter);
+
+/* 司机增删改查 */
+var driversRouter = require('./routes/drivers');
+app.use('/api/drivers', driversRouter);
 
 
 

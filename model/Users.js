@@ -3,7 +3,7 @@
  */
 var mongoose = require('../dbConnect');
 
-var UsersSchema = new mongoose.Schema({
+var UserSchema = new mongoose.Schema({
     account: {
         type: String
     },
@@ -12,5 +12,5 @@ var UsersSchema = new mongoose.Schema({
     }
 },{ collection: 'users' });
 
-var UsersModel = mongoose.model('users',UsersSchema);
-module.exports = UsersModel;
+var UserModel = mongoose.model('users',UserSchema);
+module.exports = UserModel;
