@@ -38,6 +38,22 @@ app.use('/api/users', usersRouter);
 var driversRouter = require('./routes/drivers');
 app.use('/api/drivers', driversRouter);
 
+/* 省份查询 */
+var provinceRouter = require('./routes/province');
+app.use('/api/province', provinceRouter);
+
+/* 城市查询 */
+var cityRouter = require('./routes/city');
+app.use('/api/city', cityRouter);
+
+/* 地区查询 */
+var areaRouter = require('./routes/area');
+app.use('/api/area', areaRouter);
+
+/* 街道查询 */
+var streetRouter = require('./routes/street');
+app.use('/api/street', streetRouter);
+
 
 
 /* 当前面的所有路由没有匹配上的时候，就会走这里 */
