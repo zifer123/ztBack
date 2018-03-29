@@ -6,11 +6,9 @@ var DriverSchema = new mongoose.Schema({
     real_name: {
         type: String
     },
-    role: {
-        type: Number
-    },
     add_time: {
-        type: String
+        type: String,
+        default: new Date()
     },
     level: {
         type: Number
